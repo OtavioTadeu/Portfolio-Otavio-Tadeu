@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Otávio Tadeu</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="gh-header">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <span class="logo-symbol">
+                    <i class="fas fa-terminal"></i>
+                </span>
+                <span class="logo-text">otaviotadeu</span>
+            </div>
+            
+            <div class="nav-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" class="btn-icon" aria-label="Alternar Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <span class="greeting-badge">👋 Bem-vindo ao meu perfil</span>
+            <h1 class="hero-title">Otávio Tadeu</h1>
+            <h2 class="hero-subtitle">Desenvolvedor Back-end & Monitor de Tecnologia</h2>
+            <p class="hero-bio">
+                Estudante de Ciência da Computação focado em construir softwares robustos com 
+                <strong>C# .NET</strong> e <strong>PHP</strong>. Atualmente explorando soluções de segurança e arquitetura de dados.
+            </p>
+            <div class="hero-btns">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="https://github.com/otaviotadeu" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <div class="readme-box">
+                <div class="readme-header">
+                    <i class="fas fa-book-open"></i> otaviotadeu / <strong>README.md</strong>
+                </div>
+                <div class="readme-body">
+                    <h3>👨‍💻 Sobre Mim</h3>
+                    <p>
+                        Minha jornada técnica começou no <strong>Colégio Cotemig</strong> e hoje aprofundo a teoria na graduação em Ciência da Computação.
+                    </p>
+                    <p>
+                        Além de codificar, atuo como <strong>Monitor de Laboratório</strong>, onde desenvolvi uma didática sólida ensinando lógica de programação, SQL e Web Development para outros alunos.
+                    </p>
+                    <br>
+                    <ul class="about-list">
+                        <li>🎓 <strong>Formação:</strong> Ciência da Computação (Em curso)</li>
+                        <li>💼 <strong>Foco:</strong> Back-end, APIs e Bancos de Dados</li>
+                        <li>🎯 <strong>Objetivo:</strong> Segurança da Informação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-secondary">
+        <div class="container">
+            <h2 class="section-title">Tecnologias & Ferramentas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon csharp-color"><i class="fab fa-microsoft"></i></div>
+                    <div class="skill-info">
+                        <h4>C# .NET</h4>
+                        <span class="skill-tag">Avançado</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon php-color"><i class="fab fa-php"></i></div>
+                    <div class="skill-info">
+                        <h4>PHP</h4>
+                        <span class="skill-tag">Intermediário</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon db-color"><i class="fas fa-database"></i></div>
+                    <div class="skill-info">
+                        <h4>SQL / Oracle</h4>
+                        <span class="skill-tag">Modelagem</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon git-color"><i class="fab fa-git-alt"></i></div>
+                    <div class="skill-info">
+                        <h4>Git & GitHub</h4>
+                        <span class="skill-tag">Versionamento</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon js-color"><i class="fab fa-js"></i></div>
+                    <div class="skill-info">
+                        <h4>JavaScript</h4>
+                        <span class="skill-tag">Front-end</span>
+                    </div>
+                </div>
+
+                 <div class="skill-card">
+                    <div class="skill-icon sec-color"><i class="fas fa-shield-alt"></i></div>
+                    <div class="skill-info">
+                        <h4>Segurança</h4>
+                        <span class="skill-tag">Estudos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                
+                <article class="repo-card">
+                    <div class="repo-header">
+                        <i class="fas fa-book-bookmark repo-icon"></i>
+                        <a href="https://github.com/otaviotadeu/sistema-restaurante" target="_blank" class="repo-title">sistema-restaurante</a>
+                        <span class="badge">Public</span>
+                    </div>
+                    <p class="repo-desc">
+                        Plataforma de PDV e delivery com automação de impressão térmica via script Python (Win32 API).
+                    </p>
+                    <div class="repo-meta">
+                        <span class="language"><span class="circle python"></span>Python</span>
+                        <span class="stars"><i class="far fa-star"></i> Flask</span>
+                    </div>
+                </article>
+
+                <article class="repo-card">
+                    <div class="repo-header">
+                        <i class="fas fa-book-bookmark repo-icon"></i>
+                        <a href="https://github.com/otaviotadeu/SortAlgorithms" target="_blank" class="repo-title">SortAlgorithms</a>
+                        <span class="badge">Public</span>
+                    </div>
+                    <p class="repo-desc">
+                        Laboratório visual para análise de performance de algoritmos de ordenação (QuickSort, MergeSort) em tempo real.
+                    </p>
+                    <div class="repo-meta">
+                        <span class="language"><span class="circle csharp"></span>C#</span>
+                        <span class="stars"><i class="far fa-star"></i> Windows Forms</span>
+                    </div>
+                </article>
+
+                <article class="repo-card">
+                    <div class="repo-header">
+                        <i class="fas fa-book-bookmark repo-icon"></i>
+                        <a href="https://github.com/otaviotadeu/portfolio-otavio-tadeu" target="_blank" class="repo-title">portfolio-otavio-tadeu</a>
+                        <span class="badge">Public</span>
+                    </div>
+                    <p class="repo-desc">
+                        Este site. Desenvolvido com HTML5 Semântico, CSS Moderno e JavaScript Puro (Vanilla) com suporte a temas.
+                    </p>
+                    <div class="repo-meta">
+                        <span class="language"><span class="circle html"></span>HTML</span>
+                        <span class="stars"><i class="far fa-star"></i> CSS3</span>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="snake-section">
+                <img src="https://github.com/otaviotadeu/otaviotadeu/raw/output/github-contribution-grid-snake-dark.svg" alt="Contribuições no GitHub">
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Otávio Tadeu</p>
+                <div class="social-links">
+                    <a href="mailto:otaviotadeu244@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/otavio-tadeu/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/otaviotadeu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
