@@ -3,30 +3,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const icon = toggleBtn.querySelector('i');
 
-    // Verifica se já existe preferência salva no navegador
+    // Verifica preferência salva no navegador
     const savedTheme = localStorage.getItem('portfolio-theme');
     
     if (savedTheme) {
+        // Se tiver preferência salva, aplica
         body.setAttribute('data-theme', savedTheme);
         updateIcon(savedTheme);
+    } else {
+        // Se NÃO tiver preferência, assume o padrão Dark que está no HTML
+        // Não precisamos fazer nada pois o HTML já está data-theme="dark"
+        updateIcon('dark');
     }
 
     toggleBtn.addEventListener('click', () => {
-        const currentTheme = body.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        // Pega o tema atual (ou dark se for nulo)
+        const currentTheme = body.getAttribute('data-theme') || 'dark';
+        
+        // Se for Dark, vira Light. Se for Light, vira Dark.
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('portfolio-theme', newTheme); // Salva a escolha
+        localStorage.setItem('portfolio-theme', newTheme); // Salva escolha
         updateIcon(newTheme);
     });
 
     function updateIcon(theme) {
         if (theme === 'dark') {
+            // Se estiver Dark, mostra Sol (para ir pro Light)
             icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun'); // Ícone de sol para voltar ao claro
+            icon.classList.add('fa-sun');
         } else {
+            // Se estiver Light, mostra Lua (para ir pro Dark)
             icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon'); // Ícone de lua para ir ao escuro
+            icon.classList.add('fa-moon');
         }
     }
 });
